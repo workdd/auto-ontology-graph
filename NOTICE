@@ -1,0 +1,8 @@
+auto-ontology-graph
+Copyright 2026 The auto-ontology-graph authors
+
+The table-to-graph mapping reads the database layout of NVIDIA Auto-Ontology
+(https://github.com/NVIDIA/auto-ontology, Apache-2.0) and reuses its label and
+edge-type names. Parts of the AGE helpers were first written as a prototype in
+https://github.com/workdd/auto-ontology/pull/1. No Auto-Ontology code is
+imported or redistributed.

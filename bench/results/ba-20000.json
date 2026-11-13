@@ -1,0 +1,171 @@
+{
+  "question": "path of at most h hops exists (undirected); shortest path is exactly h",
+  "graph": {
+    "generator": "preferential attachment",
+    "nodes": 20000,
+    "edges": 59991,
+    "m": 3,
+    "seed": 7,
+    "max_degree": 465,
+    "median_degree": 4.0
+  },
+  "environment": {
+    "postgres": "16.10 (Debian 16.10-1.pgdg13+1)",
+    "age": "1.6.0",
+    "client": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5"
+  },
+  "timeout_ms": 20000,
+  "age_load_seconds": 464.43,
+  "python_adjacency_load_ms": 146.82,
+  "results": {
+    "age_cypher": {
+      "2": {
+        "median_ms": 18.46,
+        "max_ms": 135.44,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "3": {
+        "median_ms": 9.51,
+        "max_ms": 11.09,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "4": {
+        "median_ms": 35.48,
+        "max_ms": 132.69,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "5": {
+        "median_ms": 185.08,
+        "max_ms": 2734.84,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "6": {
+        "median_ms": 3573.87,
+        "max_ms": 20000.0,
+        "pairs": 5,
+        "timeouts": 2,
+        "not_found": 0
+      }
+    },
+    "sql_recursive": {
+      "2": {
+        "median_ms": 1.74,
+        "max_ms": 7.4,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "3": {
+        "median_ms": 2.79,
+        "max_ms": 6.31,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "4": {
+        "median_ms": 14.63,
+        "max_ms": 15.45,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "5": {
+        "median_ms": 56.12,
+        "max_ms": 164.38,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "6": {
+        "median_ms": 733.14,
+        "max_ms": 2202.17,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      }
+    },
+    "sql_level_bfs": {
+      "2": {
+        "median_ms": 2.66,
+        "max_ms": 3.88,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "3": {
+        "median_ms": 5.81,
+        "max_ms": 7.8,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "4": {
+        "median_ms": 11.68,
+        "max_ms": 24.54,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "5": {
+        "median_ms": 49.35,
+        "max_ms": 77.87,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "6": {
+        "median_ms": 85.11,
+        "max_ms": 146.67,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      }
+    },
+    "python_bfs": {
+      "2": {
+        "median_ms": 0.02,
+        "max_ms": 0.06,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "3": {
+        "median_ms": 0.16,
+        "max_ms": 0.8,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "4": {
+        "median_ms": 0.61,
+        "max_ms": 1.02,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "5": {
+        "median_ms": 1.51,
+        "max_ms": 6.08,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      },
+      "6": {
+        "median_ms": 10.7,
+        "max_ms": 21.37,
+        "pairs": 5,
+        "timeouts": 0,
+        "not_found": 0
+      }
+    }
+  }
+}
